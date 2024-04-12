@@ -27,21 +27,20 @@
 
       < 자료형의 다름으로 발생할 수 있는 오류들 >
 
-  1. 특정 자료형에 대해서만 사용될 수 있는 기능 (런타임 오류)
+      1. 특정 자료형에 대해서만 사용될 수 있는 기능 (런타임 오류)
 
-     // 주어진 문자열을 대문자로 바꾸는 함수
-     // 다른 자료형에 대한 예외처리 없음
-     function getUpperCase(str) {
-     return str.toUpperCase();
-     }
+        // 주어진 문자열을 대문자로 바꾸는 함수
+        // 다른 자료형에 대한 예외처리 없음
+        function getUpperCase(str) {
+        return str.toUpperCase();
+        }
 
-     console.log(getUpperCase('hello')); => HELLO
+        console.log(getUpperCase('hello')); => HELLO
 
-     ***
+        ***
+        // 오류 발생!
+        console.log(getUpperCase(1));
 
-     // 오류 발생!
-     console.log(getUpperCase(1));
-
-  2. 의도와 다른 연산 (논리 오류)
-     1 + 1 => 2
-     '1' + 1 => 11
+      2. 의도와 다른 연산 (논리 오류)
+        1 + 1 => 2
+        '1' + 1 => 11
